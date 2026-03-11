@@ -97,3 +97,86 @@ person = 5
 Выполняйте домашнее задание в Jdoodle. Инструкцию по работе с JDoodle вы найдёте в первом занятии “Python. Знакомство с консолью”
 
 *Никаких файлов прикреплять не нужно.*
+
+
+# **Решение:**
+
+
+## **Задача 1**
+
+
+```
+boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
+girls = ['Kate', 'Liza', 'Kira', 'Emma', 'Trisha']
+
+boys.sort()
+girls.sort()
+
+new_teams = zip(boys, girls)
+
+print('Идеальные пары:')
+for boy, girl in new_teams:
+    print(boy, 'и', girl)
+
+```
+
+
+-![MVP dating](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%82%D0%B8%D0%BF%D1%8B_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B8_%D1%86%D0%B8%D0%BA%D0%BB%D1%8B/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-03-11%20195902.png)
+
+
+
+
+
+## **Задача 2**
+
+
+```
+
+person = 5
+cook_book = [
+  ['Салат',
+      [
+        ['картофель', 100, 'гр.'],
+        ['морковь', 50, 'гр.'],
+        ['огурцы', 50, 'гр.'],
+        ['горошек', 30, 'гр.'],
+        ['майонез', 70, 'мл.'],
+      ]
+  ],
+  ['Пицца',  
+      [
+        ['сыр', 50, 'гр.'],
+        ['томаты', 50, 'гр.'],
+        ['тесто', 100, 'гр.'],
+        ['бекон', 30, 'гр.'],
+        ['колбаса', 30, 'гр.'],
+        ['грибы', 20, 'гр.'],
+      ],
+  ],
+  ['Фруктовый десерт',
+      [
+        ['хурма', 60, 'гр.'],
+        ['киви', 60, 'гр.'],
+        ['творог', 60, 'гр.'],
+        ['сахар', 10, 'гр.'],
+        ['мед', 50, 'мл.'],  
+      ]
+  ]
+]
+
+
+for dish in cook_book:
+    print(dish[0] +':')
+    for ingr in dish[1]:
+        total = ingr[1] * person
+        print(f"{ingr[0]}, {total}{ingr[2]}")
+    print()  
+
+```
+
+
+- ![cook_book](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B2_%D1%82%D0%B8%D0%BF%D1%8B_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B8_%D1%86%D0%B8%D0%BA%D0%BB%D1%8B/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-03-09%20211751.png)
+
+
+
+
