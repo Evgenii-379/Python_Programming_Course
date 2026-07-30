@@ -92,6 +92,10 @@ print(geo_logs)
 
 - ![visit](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20201735.png)
 
+## **Вывод:** 
+
+[{'visit1': ['Москва', 'Россия']}, {'visit3': ['Владимир', 'Россия']}, {'visit7': ['Тула', 'Россия']}, {'visit8': ['Тула', 'Россия']}, {'visit9': ['Курск', 'Россия']}, {'visit10': ['Архангельск', 'Россия']}]
+
 ## **Задание 2**
 
 ```
@@ -103,6 +107,10 @@ print(list(set(my_list)))
 
 ```
 - ![geo_ID](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203220.png)
+
+## **Вывод:**
+
+[98, 35, 15, 213, 54, 119]
 
 ## **Задание 3**
 
@@ -133,6 +141,12 @@ for key,value in my_dict.items():
 ```
 - ![queries](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203417.png)
 
+## **Вывод:**
+
+
+3 4 57.14
+2 3 42.86
+
 ## **Задание 4**
 
 ```
@@ -147,6 +161,10 @@ print(max_channel)
 
 ```
 - ![stats](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203528.png)
+
+## **Вывод:**
+
+yandex
 
 ## **Задание 5**
 
@@ -165,6 +183,10 @@ print(result)
 
 ```
 - ![converting_list](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203626.png)
+
+## **Вывод:**
+
+{'2018-01-01': {'yandex': {'cpc': 100}}}
 
 
 
