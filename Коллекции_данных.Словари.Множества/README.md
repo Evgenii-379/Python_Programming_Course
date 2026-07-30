@@ -26,7 +26,7 @@ geo_logs = [
 ids = {'user1': [213, 213, 213, 15, 213],
        'user2': [54, 54, 119, 119, 119],
        'user3': [213, 98, 98, 35]}
-``` 
+ ``` 
 
 ## **Задание 3**  
 Дан список поисковых запросов. Получить распределение количества слов в них.
@@ -72,7 +72,7 @@ stats = {'facebook': 55, 'yandex': 120, 'vk': 115, 'google': 99, 'email': 42, 'o
 
 ## **Задание 1**
 
-
+```
 geo_logs = [
   {'visit1': ['Москва', 'Россия']},
   {'visit2': ['Дели', 'Индия']},
@@ -88,20 +88,22 @@ geo_logs = [
 
 geo_logs = [visit for visit in geo_logs if 'Россия' in list(visit.values())[0]]
 print(geo_logs)
-
+```
 
 ## **Задание 2**
 
-
+```
 ids = {'user1': [213, 213, 213, 15, 213],
        'user2': [54, 54, 119, 119, 119],
        'user3': [213, 98, 98, 35]}
 my_list=[ n for sublist in ids.values() for n in sublist]
 print(list(set(my_list)))
 
+```
 
 ## **Задание 3**
 
+```
 queries = [
   'смотреть сериалы онлайн',
   'новости спорта',
@@ -125,9 +127,11 @@ for key,value in my_dict.items():
    percent=round(percent,2)
    print(key,value,percent)
 
+```
 
 ## **Задание 4**
 
+```
 stats = {'facebook': 55, 'yandex': 120, 'vk': 115, 'google': 99, 'email': 42, 'ok': 98}
 max_value = 0
 max_channel = ''
@@ -152,7 +156,7 @@ for index, elem in enumerate(data[:-1]):
         current_dict = current_dict[elem]
 print(result)
 
-
+```
 
 
 
