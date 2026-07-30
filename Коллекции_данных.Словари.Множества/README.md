@@ -141,9 +141,11 @@ for key,value in stats.items():
      max_channel = key
 print(max_channel)
 
+```
 
 ## **Задание 5**
 
+```
 data = ['2018-01-01', 'yandex', 'cpc', 100]
 result = {}
 current_dict = result
