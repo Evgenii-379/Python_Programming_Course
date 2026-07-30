@@ -20,7 +20,7 @@ geo_logs = [
 ```
 
 ## **Задание 2**  
-Выведите на экран все уникальные гео-ID из значений словаря ids.   
+Выведите на экран все уникальные гео-ID из значений словаря ids.
 Т.е. список вида [213, 15, 54, 119, 98, 35]
 ```python
 ids = {'user1': [213, 213, 213, 15, 213],
@@ -44,9 +44,9 @@ queries = [
 ```
 
 ## **Задание 4**  
-Дана статистика рекламных каналов по объемам продаж.  
-Напишите скрипт, который возвращает название канала с максимальным объемом.  
-Т.е. в данном примере скрипт должен возвращать 'yandex'.  
+Дана статистика рекламных каналов по объемам продаж.
+Напишите скрипт, который возвращает название канала с максимальным объемом.
+Т.е. в данном примере скрипт должен возвращать 'yandex'.
 ```python
 stats = {'facebook': 55, 'yandex': 120, 'vk': 115, 'google': 99, 'email': 42, 'ok': 98}
 ```
@@ -90,7 +90,7 @@ geo_logs = [visit for visit in geo_logs if 'Россия' in list(visit.values()
 print(geo_logs)
 ```
 
-- [visit](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20201735.png)
+- ![visit](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20201735.png)
 
 ## **Задание 2**
 
@@ -102,7 +102,7 @@ my_list=[ n for sublist in ids.values() for n in sublist]
 print(list(set(my_list)))
 
 ```
-- [geo_ID](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203220.png)
+- ![geo_ID](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203220.png)
 
 ## **Задание 3**
 
@@ -131,7 +131,7 @@ for key,value in my_dict.items():
    print(key,value,percent)
 
 ```
-- [queries](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203417.png)
+- ![queries](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203417.png)
 
 ## **Задание 4**
 
@@ -146,7 +146,7 @@ for key,value in stats.items():
 print(max_channel)
 
 ```
-- [stats](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203528.png)
+- ![stats](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203528.png)
 
 ## **Задание 5**
 
@@ -164,7 +164,7 @@ for index, elem in enumerate(data[:-1]):
 print(result)
 
 ```
-- [converting_list](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203626.png)
+- ![converting_list](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8.%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-07-30%20203626.png)
 
 
 
