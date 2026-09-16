@@ -49,8 +49,10 @@ directories = {
 
 # **Решение :**
 
-## **Задача №1 и Задача №2**
+## **Задача №1 и Задача №2** (весь код целиком)
 
+
+```
 
 documents = [
     {"type": "passport", "number": "2207 876234", "name": "Василий Гупкин"},
@@ -183,3 +185,4 @@ elif command == "as":
 print(documents)
 print(directories)
 
+```
