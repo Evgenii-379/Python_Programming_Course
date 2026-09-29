@@ -1,3 +1,4 @@
+# I am implementing animal classes and defining methods for interacting with the animals
 class Cow :
     def __init__(self, name):
         self.name = name

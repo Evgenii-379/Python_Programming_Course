@@ -72,6 +72,8 @@
 ## Задание № 1 :
 
 ```
+# I am implementing animal classes and defining methods for interacting with the animals
+
 class Cow :
     def __init__(self, name):
         self.name = name
@@ -221,6 +223,8 @@ quack.voice()
 ## Задание №2 :
 
 ```
+# I am implementing animal classes and defining methods for interacting with the animals
+
 class Cow :
     def __init__(self, name, weight):
         self.name = name
@@ -369,6 +373,9 @@ quack.feed()
 quack.collect_eggs()
 quack.voice()
 
+
+# Calculating the total weight of all animals and displaying the name of the heaviest animal
+
 animals = [manka, lamb, curly, horns, hooves, grey, white, chick, kukareku, quack]
 total = 0
 
@@ -390,3 +397,4 @@ print(max_name)
 ```
 
 - ![max_weight](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B_%D0%B8_%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B_%D0%92%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D1%8F_%D0%BC%D0%B5%D0%B6%D0%B4%D1%83_%D0%BD%D0%B8%D0%BC%D0%B8/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-09-29%20115238.png)
+

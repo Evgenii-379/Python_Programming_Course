@@ -1,3 +1,5 @@
+# I am implementing animal classes and defining methods for interacting with the animals
+
 class Cow :
     def __init__(self, name, weight):
         self.name = name
@@ -145,6 +147,8 @@ quack = Duck("Кряква", 7)
 quack.feed()
 quack.collect_eggs()
 quack.voice()
+
+# Calculating the total weight of all animals and displaying the name of the heaviest animal
 
 animals = [manka, lamb, curly, horns, hooves, grey, white, chick, kukareku, quack]
 total = 0
