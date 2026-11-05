@@ -145,10 +145,11 @@ get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'
 * теоретический рассказ о возникших проблемах.
 
 
+
 # Выполнение заданий:
 
 
-Создал папку Открытие_и_чтение_файла,_запись_в_файл. В этой папке создал файл cookbook.txt и cookbook.py. В файл cookbook.txt внёс первоначальный список кулинарной книги
+Создал папку Открытие_и_чтение_файла,_запись_в_файл. В этой папке создал файл cookbook.txt и cookbook.py. В файл cookbook.txt внёс первоначальный список кулинарной книги.
 Проверил можно ли прочитать файл cookbook.txt  из файла cookbook.py при помощи кода:
 
 ```
@@ -158,3 +159,55 @@ with open("cookbook.txt", "r", encoding="utf-8)") as file:
 ```
 
 - ![read_file](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%B8_%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C_%D0%B2_%D1%84%D0%B0%D0%B9%D0%BB/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-10-29%20161127.png)
+
+
+## Задача №1
+
+```
+def read_cookbook(filename):
+    cook_book = {}
+
+    with open(filename, "r", encoding="utf-8") as file:
+        while True:
+            line = file.readline()
+
+            if line == "":
+                break
+
+            dish_name = line.strip()
+
+            if dish_name == "":
+                continue
+
+            ingredient_count = int(file.readline().strip())
+
+
+            ingredients = []
+
+            for i in range(ingredient_count):
+                ingredient_line = file.readline().strip()
+                parts = ingredient_line.split("|")
+                ingredient_name = parts[0].strip()
+                quantity = int(parts[1].strip())
+                measure = parts[2].strip()
+
+
+
+                ingredient = {
+                    "ingredient_name": ingredient_name,
+                    "quantity": quantity,
+                    "measure": measure
+                }
+
+                ingredients.append(ingredient)
+
+            cook_book[dish_name] = ingredients
+
+        return cook_book
+
+cook_book = read_cookbook("cookbook.txt")
+print(cook_book)
+
+```
+
+- ![dict]()
