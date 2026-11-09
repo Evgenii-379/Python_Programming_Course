@@ -152,7 +152,7 @@ get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'
 Создал папку Открытие_и_чтение_файла,_запись_в_файл. В этой папке создал файл cookbook.txt и cookbook.py. В файл cookbook.txt внёс первоначальный список кулинарной книги.
 Проверил можно ли прочитать файл cookbook.txt  из файла cookbook.py при помощи кода:
 
-```
+```python
 with open("cookbook.txt", "r", encoding="utf-8)") as file:
     for line in file:
         print(line, end="")
@@ -163,7 +163,7 @@ with open("cookbook.txt", "r", encoding="utf-8)") as file:
 
 ## Задача №1
 
-```
+```python
 def read_cookbook(filename):
     cook_book = {}
 
@@ -216,7 +216,7 @@ print(cook_book)
 
 ## Задача №2
 
-```
+```python
 def read_cookbook(filename):
     cook_book = {}
 
@@ -297,7 +297,7 @@ print(shopping_list)
 
 ## Задача №3
 
-
+```python
 import os
 
 filenames = ["sorted/1.txt", "sorted/2.txt", "sorted/3.txt"]
@@ -305,7 +305,6 @@ filenames = ["sorted/1.txt", "sorted/2.txt", "sorted/3.txt"]
 files_info = []
 
 for filename in filenames:
-
 
     with open(filename, "r", encoding="utf-8") as file :
 
@@ -328,8 +327,6 @@ files_info.sort(key=lambda item: item["line_count"])
 print(files_info)
 
 
-# Начинаем объединение файлов в result.txt
-
 with open("result.txt", "w", encoding="utf-8") as file:
     for item in files_info:
 
@@ -343,6 +340,7 @@ with open("result.txt", "w", encoding="utf-8") as file:
 
 print("\nВсе файлы успешно объединены в result.txt")
 
+```
 
 - ![write_file](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%B8_%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C_%D0%B2_%D1%84%D0%B0%D0%B9%D0%BB/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-09%20102602.png)
 - ![write_file](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%B8_%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C_%D0%B2_%D1%84%D0%B0%D0%B9%D0%BB/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-09%20102659.png)
