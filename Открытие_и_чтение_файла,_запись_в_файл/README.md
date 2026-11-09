@@ -326,6 +326,7 @@ files_info.sort(key=lambda item: item["line_count"])
 
 print(files_info)
 
+# Начинаем объединение файлов в result.txt
 
 with open("result.txt", "w", encoding="utf-8") as file:
     for item in files_info:
