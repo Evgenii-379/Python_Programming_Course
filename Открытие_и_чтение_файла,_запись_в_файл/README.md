@@ -213,3 +213,137 @@ print(cook_book)
 - ![dict](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%B8_%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C_%D0%B2_%D1%84%D0%B0%D0%B9%D0%BB/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-05%20102950.png)
 
 
+
+## Задача №2
+
+```
+def read_cookbook(filename):
+    cook_book = {}
+
+    with open(filename, "r", encoding="utf-8") as file:
+        while True:
+            line = file.readline()
+
+            if line == "":
+                break
+
+            dish_name = line.strip()
+
+            if dish_name == "":
+                continue
+
+            ingredient_count = int(file.readline().strip())
+
+
+            ingredients = []
+
+            for i in range(ingredient_count):
+                ingredient_line = file.readline().strip()
+                parts = ingredient_line.split("|")
+                ingredient_name = parts[0].strip()
+                quantity = int(parts[1].strip())
+                measure = parts[2].strip()
+
+
+
+                ingredient = {
+                    "ingredient_name": ingredient_name,
+                    "quantity": quantity,
+                    "measure": measure
+                }
+
+                ingredients.append(ingredient)
+
+            cook_book[dish_name] = ingredients
+
+        return cook_book
+
+cook_book = read_cookbook("cookbook.txt")
+print(cook_book)
+
+
+def get_shop_list_by_dishes(dishes, person_count, cook_book):
+    shop_list = {}
+
+    for dish in dishes:
+        ingredients = cook_book[dish]
+
+        for ingr in ingredients:
+            name = ingr["ingredient_name"]
+            quantity = ingr["quantity"]
+            measure = ingr["measure"]
+
+            total_quantity = quantity * person_count
+
+            if name in shop_list:
+                shop_list[name]["quantity"] += total_quantity
+            else:
+                shop_list[name] = {
+                    "measure": measure,
+                    "quantity": total_quantity
+                }
+
+    return shop_list
+
+shopping_list = get_shop_list_by_dishes(["Омлет", "Фахитос"], 2, cook_book)
+
+print(shopping_list)
+
+```
+
+- ![dict](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%B8_%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C_%D0%B2_%D1%84%D0%B0%D0%B9%D0%BB/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-09%20102132.png)
+
+
+
+## Задача №3
+
+
+import os
+
+filenames = ["sorted/1.txt", "sorted/2.txt", "sorted/3.txt"]
+
+files_info = []
+
+for filename in filenames:
+
+
+    with open(filename, "r", encoding="utf-8") as file :
+
+        lines = file.readlines()
+        line_count = len(lines)
+
+        print(line_count)
+
+        file_info = {
+            "filename": filename,
+            "line_count": line_count,
+            "lines": lines
+        }
+
+        files_info.append(file_info)
+
+
+files_info.sort(key=lambda item: item["line_count"])
+
+print(files_info)
+
+
+# Начинаем объединение файлов в result.txt
+
+with open("result.txt", "w", encoding="utf-8") as file:
+    for item in files_info:
+
+        file.write(os.path.basename(item["filename"]) + "\n")
+        file.write(str(item["line_count"]) + "\n")
+
+        print(item["filename"], item["line_count"])
+
+        for line in item["lines"]:
+            file.write(line)
+
+print("\nВсе файлы успешно объединены в result.txt")
+
+
+- ![write_file](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%B8_%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C_%D0%B2_%D1%84%D0%B0%D0%B9%D0%BB/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-09%20102602.png)
+- ![write_file](https://github.com/Evgenii-379/Python_Programming_Course/blob/main/%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%B8_%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5_%D1%84%D0%B0%D0%B9%D0%BB%D0%B0%2C_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C_%D0%B2_%D1%84%D0%B0%D0%B9%D0%BB/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202026-11-09%20102659.png)
+

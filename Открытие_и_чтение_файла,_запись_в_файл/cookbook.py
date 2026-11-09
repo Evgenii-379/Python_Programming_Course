@@ -44,6 +44,36 @@ cook_book = read_cookbook("cookbook.txt")
 print(cook_book)
 
 
+def get_shop_list_by_dishes(dishes, person_count, cook_book):
+    shop_list = {}
+
+    for dish in dishes:
+        ingredients = cook_book[dish]
+
+        for ingr in ingredients:
+            name = ingr["ingredient_name"]
+            quantity = ingr["quantity"]
+            measure = ingr["measure"]
+
+            total_quantity = quantity * person_count
+
+            if name in shop_list:
+                shop_list[name]["quantity"] += total_quantity
+            else:
+                shop_list[name] = {
+                    "measure": measure,
+                    "quantity": total_quantity
+                }
+
+    return shop_list
+
+shopping_list = get_shop_list_by_dishes(["Омлет", "Фахитос"], 2, cook_book)
+
+print(shopping_list)
+
+
+
+
 
 
 
